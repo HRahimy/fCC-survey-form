@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel='stylesheet' href='styles.css' />
+  </head>
+  <body>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the platform</p>
+    <form id='survey-form'>
+      <fieldset>
+        <label id='name-label'>Name<input id='name' type='text' placeholder="Enter your name" required /></label>
+        <label id='email-label'>Email<input id='email' type='email' placeholder="Enter your Email" required /></label>
+        <label id='number-label'>Age<input id='number' type='number' placeholder="Enter your age" min=13 max=120 /></label>
+        <label>
+          Dropdown
+          <select id='dropdown'>
+            <option value="">(Select)</option>
+            <option value=1>Option 1</option>
+            <option value=2>Option 2</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <h3>Radio</h3>
+        <label>
+          <input class='inline' type='radio' name='radio' value=1 /> Radio 1
+        </label>
+        <label>
+          <input class='inline' type='radio' name='radio' value=2 /> Radio 2
+        </label>
+      </fieldset>
+      <fieldset>
+        <h3>Checkboxes</h3>
+        <label>
+          <input class='inline' type='checkbox' value=1 /> Field 1
+        </label>
+        <label>
+          <input class='inline' type='checkbox' value=2 /> Field 2
+        </label>
+        <label>
+          <input class='inline' type='checkbox' value=3 /> Field 3
+        </label>
+      </fieldset>
+      <fieldset>
+        <h3>Text area</h3>
+        <label>
+          Additional comments <textarea rows=3 cols=30></textarea>
+        </label>
+      </fieldset>
+      <input id='submit' type='submit' value='Submit' />
+    </form>
+  </body>
+</html>
